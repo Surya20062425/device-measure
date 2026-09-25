@@ -1,0 +1,21 @@
+[package]
+name = "core_math"
+version = "0.1.0"
+edition = "2021"
+description = "Platform-agnostic distance/diameter/uncertainty math shared by the Android and Web apps."
+license = "MIT"
+
+# rlib: normal Rust linking, used for `cargo test` and by other Rust crates.
+# cdylib: C-compatible dynamic library, required to compile this crate to
+#         both WASM (for the web app, via wasm-bindgen) and a shared object
+#         consumable via JNI (for the Android app). Both targets are added
+#         now, ahead of actually writing the WASM/JNI binding layers, so the
+#         crate structure doesn't need to change later.
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true

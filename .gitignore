@@ -1,0 +1,21 @@
+# Rust
+core-math/target/
+Cargo.lock
+
+# Android
+android-app/.gradle/
+android-app/build/
+android-app/local.properties
+android-app/*/build/
+
+# Web
+web-app/node_modules/
+web-app/dist/
+web-app/.env
+
+# Models (large binaries, don't commit to git — document fetch instead)
+models/exports/*.tflite
+models/exports/*.onnx
+
+# OS
+.DS_Store
