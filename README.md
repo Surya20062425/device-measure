@@ -54,6 +54,20 @@ benchmarks/     Ground-truth objects + accuracy reporting, per platform/backend
 docs/           Architecture, contributing, and extension guides
 ```
 
+## Install (Android)
+
+**No APK yet.** Phase 1 (Android MVP) has not been started — the app does not
+exist. When an APK is produced, it will be published under
+[Releases](https://github.com/Surya20062425/device-measure/releases) with
+per-build checksums.
+
+<!-- ponytail: disabled button until android-app/ exists. Enable + point it at
+     the first release APK URL when Phase 1 ships. -->
+<a href="https://github.com/Surya20062425/device-measure/releases" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:#252525;border:1px solid #555;border-radius:6px;padding:10px 16px;color:#e0e0e0;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;margin:12px 0;">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+  Download APK (not available yet)
+</a>
+
 ## Building `core-math`
 
 ```
